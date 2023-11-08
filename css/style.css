@@ -299,7 +299,6 @@ main {
     position: relative;
     border-bottom: 60px solid #ff5200;
     height: auto;
-    overflow: hidden;
 }
 #s3 h2 {
 	margin: 0px auto;
@@ -328,8 +327,8 @@ main {
     background-repeat: no-repeat;
     background-size: 93%;
     margin: 0px;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 100%;
     z-index: 1;
     position: absolute;
     left: 0px;
@@ -339,12 +338,12 @@ main {
     background-image: url(../images/HistoryBackground.jpg);
     background-repeat: no-repeat;
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 98%;
     top: 0px;
     left: 0px;
     background-size: 93%;
-    background-position: left bottom;
+    background-position: left top;
 }
 .s3_Content {
     width: 50%;
