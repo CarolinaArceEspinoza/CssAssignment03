@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" >
+		<title>CSS - How Sweet Is This!</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="images/Fabicon.svg" type="image/x-icon">
+
+	</head>
+	<body>
+		
+		<div id="container">
+			<!-- Small button to go up the page -->
+			<a href="#container" class="up">&#9650;</a>
+
+			<header> 
+				<h1>Reese's</h1>
+				<div id="slider">
+
+					<!-- 3 images with links to specific sections of the page -->
+					<img id="placeholder" src="images/Slider/Slider1.jpg" alt="Everywhere find one!" > 
+					<p id="description">Everywhere find one!<a href ="#s2" class='slider_button'>I want more!</a></p>
+				
+							<ul id="imagegallery"> <!-- set the gallery info and links -->
+								<li>
+									<a id="img1" href="images/Slider/Slider1.jpg" title="Everywhere find one! <a href ='#s2' class='slider_button'>I want more!</a>">&bull;</a>
+								</li>
+								<li>
+									<a id="img2" href="images/Slider/Slider2.jpg" title="Delicious starts...! <a href ='#s3' class='slider_button'>Learn about</a>">&bull;</a>
+								</li>
+								<li>
+									<a id="img3" href="images/Slider/Slider3.jpg" title="Be part of our<br>community <a href ='#s4' class='slider_button'>Contact form</a>">&bull;</a>
+								</li>
+							</ul>
+							
+							<ul id="nextPrevGallery"> <!-- set the buttons next and prev -->
+								<li class="prev"><a class="np" id="prev" href="#">&#10094;</a></li>
+								<li class="next"><a class="np" id="next"  href="#">&#10095;</a></li>
+							</ul>
+				</div>
+			</header>
+			
+			<main>	
+				<!-- Gallery of products - unorder list in rows or columns depends of the device -->
+				<section id="s2">
+					<h2>Reese's Everywhere!</h2>
+						<ul>
+						<li>
+							<figure><img src="images/ReesesCereal.jpg" alt="Reeses Cereal"></figure>
+							<h3>Reese's Puffs</h3>
+							<p>Reese's Puffs Breakfast Cereal features crunchy corn puffs made with real Reese's peanut butter and combined with delicious chocolate flavour. Reese's Puffs transforms your ordinary bowl of milk into a peanut butter and chocolatey adventure and brings smiles to breakfast time. </p>
+						</li>
+						<li>
+							<figure><img src="images/ReesesIceCream.jpg" alt="Reeses Ice Cream"></figure>
+							<h3>Ice Cream</h3>
+							<p>REESE'S peanut butter light ice cream is about to be your new dessert obsession if you love REESE'S Peanut Butter cups! This ice cream has chunks of REESE'S cups and swirls of peanut butter throughout a smooth peanut butter light ice cream base. Reese's Peanut Butter is a one-of-a-kind ice cream that you're sure to love.</p>
+						</li>
+						<li>
+							<figure><img src="images/ReesesPack2.jpg" alt="Reeses Variety Pack"></figure>
+							<h3>Variety Pack</h3>
+							<p>This variety pack combines six of your favorite REESE’S candies in one delicious box. With five individually wrapped packages of each peanut butter-filled treat, there’s something for everyone to enjoy. Whether you’re sharing at the office or stocking your pantry with party favorites, this box is a one-stop shop for the REESE’S Lovers on your list!</p>
+						</li>
+						</ul>	
+						
+						<div class="animation">
+							<div class="jump"><img src="images/Fabicon.svg" alt="Icon Reeses"><div></div></div>
+							<img src="images/Truck.svg" class="truck" alt="Reeses Truck"></div>
+				</section>
+
+				<!-- History - background fix for desktop devices -->
+				<section id="s3">
+					<div class="s3_Content">
+						<h2>Reese's</h2>
+						<h3>History</h3>
+						<p>The ingenious flavor combination in each of these treats can be traced back to 1928, when H.B. Reese, an employee of The Hershey Company, created REESE’S Peanut Butter Cups in his basement. The Hershey Company supplied Reese with the chocolate coating for his candy and eventually purchased his business in 1963. We rank his invention pretty high on the list of modern marvels. </p>
+					</div>	
+				<div class="historyBg1"></div>
+				<div class="historyBg2"></div>
+				</section>
+
+				<section id="s4"><h2>Be part of our community!</h2>
+					<div class="formText">
+						<p><span>If you are not part of our community, what are you waiting for!!!!</span></p>
+						<p>Receive our news, new products info, discounts and promotions special for Reese's Lovers like you!!!</p>
+						<p><a href="#">Sign Up</a> <a href="#">Forgot Password</a></p>
+					</div>
+					<form id="contact_info" action="submission.php" method="get">
+						<div>
+							<input type="text" name="user" id="user" required size="25" maxlength="50" placeholder="User Name">
+						</div>
+						<div>
+							<input type="text" name="email" id="email" required size="25" maxlength="50" placeholder="E-Mail">
+						</div>
+						<div> 
+							<input type="password" name="password" id="password" required size="25" maxlength="50" placeholder="Password">
+						</div>
+						<button>Sign in</button>
+           			 </form></section>
+
+				<!-- Footer -->	
+			<footer id="footer">
+				<h3>Follow us!</h3>
+				<!-- Social networks with some buttons disabled -->	
+				<!-- Style links in the footer to change color when hovered over. -->
+				<nav id="social">
+				
+				<ul>
+					<li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram"></a></li>
+					<li><a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp"></a></li>
+					<li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a></li>
+					<li><a href="https://www.tiktok.com/" target="_blank"><img src="images/tik-tok.svg" alt="tik-tok"></a></li>
+				</ul>
+				</nav>
+
+
+				<!-- Style links in the footer to change color when hovered over. With an underline.-->	
+				<nav id="links">
+					<ul>
+						<li style="color:#a5834c; border: 0px;">References:</li>
+					<li><a href="https://www.chocolateworld.com/blog/reeses-brand.html" target="_blank">Official Website</a></li>
+					<li><a href="https://hersheyarchives.org/for-students/" target="_blank">Hershey Archives</a></li>
+					<li><a href="https://www.walmart.ca/en/search?q=reese%27s" target="_blank">Images from Wallmart</a></li>
+				</ul>
+				</nav>
+			</footer>
+			</main>
+		</div>
+		<script src="js/gallery.js"></script>
+	</body>
+</html>
